@@ -1,0 +1,56 @@
+2025-06-11 23:15:48,155 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-11 23:15:48,735 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-11 23:15:48,800 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-11 23:15:49,308 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-11 23:15:49,370 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-11 23:15:49,867 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/ticker/price?symbol=ETHUSDT HTTP/1.1" 200 None
+2025-06-11 23:15:49,873 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-11 23:15:50,420 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-11 23:15:50,485 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-11 23:15:50,987 [DEBUG] https://fapi.binance.com:443 "POST /fapi/v1/order HTTP/1.1" 200 None
+2025-06-11 23:15:50,989 [DEBUG] Ответ от Binance на создание ордера: {'orderId': 8389765903561497801, 'symbol': 'ETHUSDT', 'status': 'NEW', 'clientOrderId': 'bxBnWjcytGIiFFeuIKU3nM', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.017', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1749665758785}
+2025-06-11 23:15:51,003 [INFO ] Открыт ордер BUY ETHUSDT по цене 2805.03
+2025-06-11 23:50:07,032 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-11 23:50:07,607 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-11 23:50:07,659 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-11 23:50:08,180 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 00:09:06,972 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 00:09:07,682 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 00:09:07,752 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 00:09:08,319 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 00:24:54,883 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 00:24:55,558 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 00:24:55,601 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 00:24:56,180 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:15:01,675 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:15:02,258 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:15:02,315 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:15:02,870 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:36:51,254 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:36:51,802 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:36:51,856 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:36:52,400 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:42:39,302 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:42:39,909 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:42:39,960 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:42:40,478 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:42:40,522 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:42:41,040 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/ticker/price?symbol=ETHUSDT HTTP/1.1" 200 None
+2025-06-12 16:42:41,044 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:42:41,565 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:42:41,626 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:42:42,134 [DEBUG] https://fapi.binance.com:443 "POST /fapi/v1/order HTTP/1.1" 400 79
+2025-06-12 16:42:42,135 [DEBUG] Ответ от Binance на создание ордера: {'code': -1021, 'msg': 'Timestamp for this request is outside of the recvWindow.'}
+2025-06-12 16:42:42,136 [ERROR] Ошибка при создании ордера: {'code': -1021, 'msg': 'Timestamp for this request is outside of the recvWindow.'}
+2025-06-12 16:43:44,952 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:43:45,692 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:43:45,731 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:43:46,247 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:43:46,305 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:43:46,809 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/ticker/price?symbol=ETHUSDT HTTP/1.1" 200 None
+2025-06-12 16:43:46,813 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:43:47,343 [DEBUG] https://fapi.binance.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2025-06-12 16:43:47,393 [DEBUG] Starting new HTTPS connection (1): fapi.binance.com:443
+2025-06-12 16:43:47,907 [DEBUG] https://fapi.binance.com:443 "POST /fapi/v1/order HTTP/1.1" 400 79
+2025-06-12 16:43:47,909 [DEBUG] Ответ от Binance на создание ордера: {'code': -1021, 'msg': 'Timestamp for this request is outside of the recvWindow.'}
+2025-06-12 16:43:47,910 [ERROR] Ошибка при создании ордера: {'code': -1021, 'msg': 'Timestamp for this request is outside of the recvWindow.'}

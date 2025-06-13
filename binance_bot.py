@@ -20,7 +20,7 @@ from misc import (
 import sqlite3
 
 def main():
-    sync_time(bot, log, pause=False)
+    bot.sync_time()  # Синхронизация времени с сервером Binance
     conn = sqlite3.connect('orders.db')
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()

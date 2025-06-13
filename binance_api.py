@@ -9,6 +9,9 @@ class BinanceFutures:
         self.API_KEY = API_KEY
         self.API_SECRET = bytearray(API_SECRET, encoding='utf-8')
         self.shift_seconds = 0
+        self.base_url = "https://fapi.binance.com"
+        self.session = requests.Session()
+        self.time_offset = 0
 
         self.methods = {
             'exchangeInfo': {'url': 'fapi/v1/exchangeInfo', 'method': 'GET', 'private': False},
@@ -40,6 +43,12 @@ class BinanceFutures:
                         }
         raise ValueError(f"Symbol info for {symbol} not found")    
 
+    def sync_time(self):
+        response = self.session.get(f"{self.base_url}/fapi/v1/time")
+        if response.ok:
+            server_time = response.json()["serverTime"]
+            self.time_offset = server_time - int(time.time() * 1000)
+        
     def call_api(self, **kwargs):
         command = kwargs.pop('command')
         method_conf = self.methods[command]
@@ -52,7 +61,7 @@ class BinanceFutures:
 
         if method_conf['private']:
             payload.update({
-                'timestamp': int(time.time() + self.shift_seconds - 1) * 1000,
+                'timestamp': int(time.time() * 1000 + self.time_offset),
                 'recvWindow': 10000
             })
             payload_str = urllib.parse.urlencode(payload).encode('utf-8')

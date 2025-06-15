@@ -4,8 +4,8 @@ import os
 from binance_api import BinanceFutures
 
 bot = BinanceFutures(
-    API_KEY='1YsAEkVPj8iAV2NVJno6fckJ6UnrlEuK3UiDrgyZv28WsEMSNqd3DqUMVJo8aZmR',
-    API_SECRET='rBPVmffl1ZpXpFKwJUdnFruOLano1uGx45bRlphAZORPJWVvMdjw4mxQtDVqOPLL'
+    API_KEY='',
+    API_SECRET=''
 )
 
 """

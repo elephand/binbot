@@ -4,10 +4,10 @@ import os
 from binance_api import BinanceFutures
 
 bot = BinanceFutures(
-    API_KEY='',
-    API_SECRET=''
+    API_KEY='1YsAEkVPj8iAV2NVJno6fckJ6UnrlEuK3UiDrgyZv28WsEMSNqd3DqUMVJo8aZmR',
+    API_SECRET='rBPVmffl1ZpXpFKwJUdnFruOLano1uGx45bRlphAZORPJWVvMdjw4mxQtDVqOPLL'
 )
- 
+
 """
     Пропишите пары, на которые будет идти торговля.
     base - это базовая пара (например USDT) — в фьючерсах это всегда вторая часть контракта.
@@ -19,9 +19,17 @@ pairs = [
         'quote': 'ETH',
         'spend_sum': 50,  # Сколько USDT тратить на вход в позицию
         'profit_markup': 1, # Какой навар нужен с каждой сделки? (1=1%)
-        'use_stop_loss': True, # Нужно ли закрывать с убытком при падении цены
+        'use_stop_loss': False, # Нужно ли закрывать с убытком при падении цены
         'stop_loss': 1.5, # На сколько должна упасть цена, чтобы закрыть с убытком
         'active': True,
+        
+        # Параметры SuperTrend для данной пары:
+        'supertrend': {
+            'source': 'hl2',
+            'atr_period': 10,
+            'multiplier': 3.0,
+            'change_atr_calculate': False
+        }
     },
     {
         'base': 'USDT',
@@ -31,6 +39,14 @@ pairs = [
         'use_stop_loss': False,
         'stop_loss': 2,
         'active': False,
+        
+        # Параметры SuperTrend для данной пары:
+        'supertrend': {
+            'source': 'hl2',
+            'atr_period': 10,
+            'multiplier': 3.0,
+            'change_atr_calculate': False
+        }
     }
 ]
 
@@ -39,7 +55,7 @@ POINTS_TO_ENTER = 7
 
 USE_OPEN_CANDLES = True
 
-TIMEFRAME = "1h"
+TIMEFRAME = "1m"
 '''
     Допустимые интервалы:
     •    1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d, 3d, 1w, 1M
